@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Collection from '../Collection/Collection';
+import Product from '../Product/Product';
+import Sell from '../Sell/Sell';
 
 const Home = () => {
     return (
-        <>
+        <div className='p-5'>
             <div className='bg-white pb-6 sm:pb-8 lg:pb-12'>
                 <section className="max-w-screen-2xl px-4 md:px-8 mx-auto">
                     <div className="flex flex-wrap justify-between mb-8 md:mb-16">
@@ -16,11 +18,11 @@ const Home = () => {
 
                         <div className="w-full lg:w-2/3 flex mb-12 md:mb-16">
                             <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
-                                <img src="https://images.unsplash.com/photo-1542340916-951bb72c8f74?auto=format&q=75&fit=crop&w=550&h=550" alt="" className="w-full h-full object-cover object-center" />
+                                <img src="https://images.unsplash.com/photo-1584944697552-86eac9d1ce51?auto=format&q=75&fit=crop&w=550&h=550" alt="" className="w-full h-full object-cover object-center" />
                             </div>
 
                             <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
-                                <img src={"https://images.unsplash.com/photo-1586295166487-b265f7e83a7f?auto=format&q=75&fit=crop&w=550&h=550"} alt="" className="w-full h-full object-cover object-center" />
+                                <img src={"https://images.unsplash.com/photo-1525828024186-5294af6c926d?auto=format&q=75&fit=crop&w=550&h=550"} alt="" className="w-full h-full object-cover object-center" />
                             </div>
                         </div>
                     </div>
@@ -61,8 +63,10 @@ const Home = () => {
                     </div>
                 </section>
             </div>
+            <Product></Product>
+            <Sell></Sell>
             <Collection></Collection>
-        </>
+        </div>
     );
 };
 
