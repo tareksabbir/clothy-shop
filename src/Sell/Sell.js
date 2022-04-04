@@ -17,7 +17,7 @@ const Sell = () => {
                     </div>
 
                     <div className="w-full sm:w-1/2 lg:w-3/5 h-48 sm:h-auto order-first sm:order-none bg-gray-700">
-                        <img src="https://images.unsplash.com/photo-1514069419621-1adbe445edf1?auto=format&q=75&fit=crop&crop=top&w=1000&h=500" alt="" className="w-full h-full object-cover object-center" />
+                        <img src="https://images.unsplash.com/photo-1441984344779-4716bd9e6b04?auto=format&q=75&fit=crop&crop=top&w=1000&h=500" alt="" className="w-full h-full object-cover object-center" />
                     </div>
 
                 </div>
