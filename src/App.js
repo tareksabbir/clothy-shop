@@ -8,6 +8,7 @@ import Error from './Error/Error';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
+import Review from './Review/Review';
 import Reviews from './Reviews/Reviews';
 
 export const ReviewContext = createContext();
@@ -15,17 +16,18 @@ export const ReviewContext = createContext();
 
 function App() {
 
-  const [review, setReview] = useState([]);
-  return (
-    <>
-      <Navbar></Navbar>
+  const [reviews, setReviews] = useState([]);
 
+  return (
+    <ReviewContext.Provider value={[reviews, setReviews]}>
+      <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Collection" element={<Collection></Collection>} />
         <Route path="/Blog" element={<Blog></Blog>} />
         <Route path="/Dashboard" element={<Dashboard></Dashboard>} />
         <Route path="/Reviews" element={<Reviews> </Reviews>} />
+        <Route path="/Review" element={<Review></Review>} />
         <Route path="*" element={<Error></Error>} />
 
 
@@ -33,7 +35,7 @@ function App() {
 
       <Footer></Footer>
 
-    </>
+    </ReviewContext.Provider>
   );
 }
 
