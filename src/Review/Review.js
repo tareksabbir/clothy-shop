@@ -1,16 +1,10 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { ReviewContext } from '../App';
+import { Link } from 'react-router-dom';
 
 
 const Review = () => {
-    const [reviews, setReviews] = useContext(ReviewContext);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [setReviews])
-
-
+    const [reviews] = useContext(ReviewContext);
     return (
         <>
 
@@ -50,6 +44,7 @@ const Review = () => {
                     </div>
                 </div>
             </div>
+            <Link to='/Reviews' className="block xl:w-2/12 mx-auto bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 border text-gray-500 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 md:px-8 py-2 md:py-3">View All Reviews</Link>
 
 
         </>

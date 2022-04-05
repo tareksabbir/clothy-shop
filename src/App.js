@@ -29,8 +29,6 @@ function App() {
         <Route path="/Reviews" element={<Reviews> </Reviews>} />
         <Route path="/Review" element={<Review></Review>} />
         <Route path="*" element={<Error></Error>} />
-
-
       </Routes>
 
       <Footer></Footer>

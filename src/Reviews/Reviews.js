@@ -1,14 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ReviewContext } from '../App';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useContext(ReviewContext);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [setReviews])
+    const [reviews] = useContext(ReviewContext);
 
     console.log(reviews);
     return (
