@@ -1,6 +1,6 @@
 # Project Name : Clothy Shoop
 
-click here to see the website [live link click here](https://github.com/facebook/create-react-app).
+click here to see the website [live link click here](https://clothyshoop.netlify.app).
 
 ## About This Project
 
