@@ -9,7 +9,7 @@ const Product = () => {
                 <div className="mb-10 md:mb-16">
                     <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">Selected</h2>
 
-                    <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+                    <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Our shop is part of REVE Tex Ltd, one of the members of REVE family; started its first retail store in 2009, today we have 18 stores at prime locations of Dhaka, Chattogram, Sylhet, Khulna & Narayanganj</p>
                 </div>
 
 
